@@ -1,0 +1,39 @@
+type Query {
+  author: [User!]!
+  details: [Details!]!
+}
+
+type User {
+  name: String! 
+  picture: String
+  title: String!
+  score: Float!
+}
+
+# type Status {
+#   closed: Int
+#   open: Int
+# }
+
+type Details  {
+  date: Date,
+  popularity: Int,
+  isTrending: Boolean,
+  title: String
+  description: String 
+  numComments: Int
+  thumbnail: String 
+  codeSubmissionTotal: Int
+  pledgeTotal: Float
+  pledgeGoal: Float 
+  pledgerCount: Int
+  status: Int
+}
+
+scalar Date
+
+# type Mutation {
+#   get(name: String!, picture: String!): User!
+#   # updateLink(id: ID!, url: String, description: String): Link
+#   # deleteLink(id: ID!): Link
+# }

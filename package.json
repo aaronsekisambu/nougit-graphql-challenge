@@ -1,0 +1,20 @@
+{
+  "name": "nougit-graphql-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aaronsekisambu/nougit-graphql-challenge.git",
+  "author": "aaronsekisambu <aaron.sekisambu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "graphql-yoga": "^1.18.3",
+    "nodemon": "^2.0.1"
+  },
+  "scripts": {
+    "start": "babel-node ./src/index.js --exec",
+    "dev": "nodemon ./src/index.js --exec babel-node"
+  }
+}
